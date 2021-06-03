@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<Configuration status="WARN">
+
+
+<Properties>
+
+        <Property name="basePath">/home/mint/Escritorio/proyectos_eclipse_normal/entorno/ficherosLog</Property>
+
+    </Properties>
+
+  <Appenders>
+
+
+	<Console name="Console">
+
+		<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %c{20} %msg%n"/>
+
+		
+
+	</Console>
+
+	 <RollingFile name="fileLogger" fileName="${basePath}/app-info.log" filePattern="${basePath}/app-info-%d{yyyy-MM-dd-hh-mm}.log">
+
+            <PatternLayout>
+
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+
+            </PatternLayout>
+
+            <Policies>
+
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+
+            </Policies>
+
+        </RollingFile>
+
+	     <File name="File" fileName="${basePath}/carlosEnjuto3eva.log.txt">
+
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+
+        </File>
+
+  </Appenders>
+
+
+  <Loggers>
+
+   
+
+    <Root level="all">
+
+      <AppenderRef ref="Console" level="debug"/>
+
+       <AppenderRef ref="fileLogger" level="info" />
+
+        <AppenderRef ref="File" />
+
+    </Root>
+
+  </Loggers>
+
+
+</Configuration>

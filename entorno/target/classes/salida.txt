@@ -1,0 +1,14 @@
+10:19:07.577 INFO  entorno.practica - mensaje de info
+10:19:07.589 DEBUG entorno.practica - esto es un debug
+10:57:13.433 INFO  entorno.practica - mensaje de info
+10:57:13.444 DEBUG entorno.practica - esto es un debug
+2021-05-31 10:58:04.987 INFO  entorno.practica - mensaje de info
+2021-05-31 10:58:04.988 DEBUG entorno.practica - esto es un debug
+11:01:06.879 INFO  entorno.practica - mensaje de info
+11:01:06.885 DEBUG entorno.practica - esto es un debug
+11:03:22.448 INFO  entorno.practica - mensaje de info
+11:03:22.453 DEBUG entorno.practica - esto es un debug
+11:04:06.920 INFO  entorno.practica - mensaje de info
+11:04:06.935 DEBUG entorno.practica - esto es un debug
+11:04:39.264 INFO  entorno.practica - mensaje de info
+11:04:39.279 DEBUG entorno.practica - esto es un debug
